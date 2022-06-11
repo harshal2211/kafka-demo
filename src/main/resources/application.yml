@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:C:/Users/Mutha/test
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: create
+    
+    
+kafka:
+  bootstrap-servers: localhost:9092
+  topic:
+    request-topic: request-topic
+    requestreply-topic: requestreply-topic
+  consumergroup: requestreplygorup
+ 
